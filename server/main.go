@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/KushalSr/calories-tracker-app/server/routes"
+	"github.com/KushalSr/calories-tracker-app/routes"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
