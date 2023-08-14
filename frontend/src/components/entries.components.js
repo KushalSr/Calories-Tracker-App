@@ -101,7 +101,7 @@ const Entries =()=>{
 
     function changeIngredientForEntry(){
         ChangeIngredient.change = false;
-        var url = "http://localhost:8000/ingredient/update" + ChangeIngredient.id 
+        var url = "http://localhost:8000/ingredient/update/" + ChangeIngredient.id 
         axios.put(url, {
             "ingredients": newIngredientName
         }).then(response=>{
@@ -150,7 +150,7 @@ const Entries =()=>{
     }
     
     function getAllEntries(){
-        var url = "http://localhost:8000/entries"
+        var url = "http://localhost:8000/entries/"
         axios.get(url,{
             responseType: "json"
     
